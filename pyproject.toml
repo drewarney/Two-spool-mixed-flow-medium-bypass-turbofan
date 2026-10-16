@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turbofan"
+version = "0.1.0"
+description = "Station-by-station cycle analysis of a two-spool mixed-flow turbofan with a variable C-D nozzle"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["turbofan"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
