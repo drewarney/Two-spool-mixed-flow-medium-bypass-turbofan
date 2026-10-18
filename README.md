@@ -41,7 +41,7 @@ python scripts/hf1_design_problem.py     # 7.D2 likewise
 | `aircraft.py` | Required thrust (Eq. 1.28 energy method, drag polar), inlet capture flow and minimum specific thrust. |
 | `plots.py`, `sweeps.py` | Figures and the flight-envelope sweep. |
 
-## Key equations (one-line versions you can defend)
+## Key equations
 
 * **Real-gas isentrope.** From T ds = dh − dp/ρ with cp = cp(T): s₂ − s₁ = φ(T₂) − φ(T₁) − R ln(p₂/p₁), where φ = ∫cp/T dT. An isentrope is therefore φ(T₂) − φ(T₁) = R ln(p₂/p₁). With constant cp this becomes T₂/T₁ = (p₂/p₁)^((γ−1)/γ).
 * **Polytropic efficiency.** Every infinitesimal stage has efficiency e:
@@ -100,7 +100,7 @@ The full table is in `figures/optimal_area_schedule.csv`. Selected points:
 | 11 km | 1.6 | 2.189 | 2.399 | 20.5 % |
 | 11 km | 1.7 | 2.243 | 2.477 | 22.6 % |
 
-What to say about it:
+What the schedule shows:
 1. The optimum tracks ideal expansion, because dF/dA9 = P9 − P0.
 2. It sits slightly **below** the P9 = P0 area, so the nozzle is slightly under-expanded. A fixed-length flap opens to a larger half-angle as A9 grows, and the divergence loss (1 + cos θ)/2 grows with it. Near the optimum the curve is flat, so a little pressure thrust is a cheap trade for less angularity.
 3. The payoff from the divergent section grows with nozzle pressure ratio: about 1 % at static conditions and over 20 % at M 1.7.
@@ -176,7 +176,7 @@ Inputs: M0 1.6, 40 kft, Tt4 3250 °R, π_c 25, α 0.5, M6 0.4, π_M,max 0.96; le
   * The lossless optimum is P9 = P0, and divergence loss moves it to under-expansion.
   * Separation limits the over-expansion penalty, and an unchoked nozzle exits at P0.
 
-## Modelling limitations (be ready for these questions)
+## Modelling limitations
 
 * There are no component maps. Polytropic efficiencies are held constant off-design (Mattingly ch. 8 assumption), and the fan has a single pressure ratio for the hub and the tip.
 * There is no turbine cooling bleed or customer bleed/power extraction. The "cooled turbine" only selects e_t from Table 6.2.

@@ -144,7 +144,7 @@ $$\frac{P_{t19}}{P_{19}} = \frac{P_0}{P_{19}}\,\pi_r\,\pi_d\,\pi_f\,\pi_{fn}, \q
 P_t19/P₁₉ = 1.5711 × 0.995 × 1.8 × 0.995 = **2.79977**. M₁₉ = **1.30765**.
 T₁₉/T₀ = 1.13778 × 1.20767/2.79977^0.28571 = **1.02390**. V₁₉/a₀ = **1.32319** (V₁₉ ≈ 390 m/s).
 
-*Interview point:* M₁₉ > 1 because P_t19/P₁₉ = 2.8 is above the critical 1.893. Full expansion (P₁₉ = P₀) would need a convergent-divergent fan nozzle. A real convergent fan nozzle would choke and leave P₁₉ > P₀, with a small pressure-thrust term instead. P₀/P₁₉ = 1 is an assumption of the problem, not something the hardware gives for free.
+*Note:* M₁₉ > 1 because P_t19/P₁₉ = 2.8 is above the critical 1.893. Full expansion (P₁₉ = P₀) would need a convergent-divergent fan nozzle. A real convergent fan nozzle would choke and leave P₁₉ > P₀, with a small pressure-thrust term instead. P₀/P₁₉ = 1 is an assumption of the problem, not something the hardware gives for free.
 
 ## Step 9. Specific thrust and TSFC
 
@@ -325,7 +325,7 @@ $$\pi_{M,ideal} = (1 + \alpha')\sqrt{\tau_M}\;\frac{1}{1 + A_{16}/A_6}\;\frac{MF
 
 π_M = π_M,max π_M,ideal = 0.96 × 0.99265 = **0.95294**
 
-*Interview point:* the ideal mixing loss (0.7 %) is the irreversibility of mixing a ~1270 K core stream (T_t6 = τ_t T_t4) with ~520 K bypass air. The mixer still pays off because the mixed jet has a better propulsive efficiency than two separate jets would.
+*Note:* the ideal mixing loss (0.7 %) is the irreversibility of mixing a ~1270 K core stream (T_t6 = τ_t T_t4) with ~520 K bypass air. The mixer still pays off because the mixed jet has a better propulsive efficiency than two separate jets would.
 
 ## Step 8. Nozzle
 

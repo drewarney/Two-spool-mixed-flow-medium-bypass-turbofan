@@ -1,7 +1,7 @@
 """Convergent-divergent exhaust nozzle with variable exit-to-throat area
 ratio  eps = A9/A8, and the sweep that finds the thrust-maximising eps.
 
-Physics summary (what to say in an interview)
+Physics summary
 --------------------------------------------
 * Upstream of the throat nothing depends on A9 once the throat is choked:
   the throat passes  mdot = A8 * (rho V)*  regardless of what happens
