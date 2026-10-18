@@ -10,6 +10,8 @@ A Python package that models a two-spool, mixed-flow turbofan from Mach 0 to 1.7
 
 Every equation in the source has a comment that says where it comes from and why it holds.
 
+**Hand calculations:** [`docs/hand_calcs.md`](docs/hand_calcs.md) walks through both design-problem hand calculations step by step, with the numbers to check at each step. [`matlab/`](matlab/) has the same steps as MATLAB scripts, plus the sweeps and carpet plots.
+
 ```
 pip install -e ".[test]"
 pytest                                   # 32 tests, ~2 s

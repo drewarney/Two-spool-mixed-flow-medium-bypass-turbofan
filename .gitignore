@@ -4,3 +4,6 @@ __pycache__/
 build/
 dist/
 .venv/
+
+# MATLAB/Octave plot output (regenerate with the scripts)
+matlab/*.png
